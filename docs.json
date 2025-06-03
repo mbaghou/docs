@@ -55,7 +55,7 @@
           "social-media-setup/facebook",
           "social-media-setup/instagram",
           "social-media-setup/tiktok",
-          "social-media-setup/twitter",
+          "social-media-setup/x",
           "social-media-setup/threads"
         ]
       },
@@ -79,7 +79,7 @@
     ]
   },
   "footerSocials": {
-    "twitter": "https://twitter.com/beehype",
+    "x": "https://twitter.com/beehype",
     "linkedin": "https://linkedin.com/company/beehype"
   },
   "navbar": {
