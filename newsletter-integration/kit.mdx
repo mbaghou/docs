@@ -1,0 +1,87 @@
+---
+title: 'ConvertKit (Kit) Integration'
+description: 'Connect your ConvertKit newsletter to BeeHype'
+---
+
+Connect your ConvertKit (now known as Kit) newsletter to automatically transform your content into engaging social media posts.
+
+## Prerequisites
+
+- A ConvertKit Creator account
+- Access to your ConvertKit API settings
+- Your ConvertKit API key (v4)
+
+## Getting Your API Key
+
+### 1. Access API Settings
+
+1. Log in to your ConvertKit dashboard
+2. Click on your profile picture in the top right
+3. Select "Account Settings"
+4. Click on ["Developer"](https://app.kit.com/account_settings/developer_settings) in the left sidebar
+
+<Frame>
+  <img src="/images/newsletter-integration/kit-developer-settings.png" alt="ConvertKit Developer Settings" />
+</Frame>
+
+### 2. Get or Generate API Key
+
+1. Look for the "V4 Keys" section
+2. If you don't have an API key (starts with `kit_`), click "Add a new key"
+3. Copy your API key - you won't be able to see it again
+
+<Warning>
+Keep your API key secure. If it's ever compromised, generate a new one immediately from your ConvertKit dashboard.
+</Warning>
+
+<Frame>
+  <img src="/images/newsletter-integration/kit-api-key.png" alt="ConvertKit API" width="600" />
+</Frame>
+
+## Connecting to BeeHype
+
+1. Go to [BeeHype Integrations](https://www.beehype.io/app/integrations)
+2. In the ConvertKit section, click "Connect"
+3. Enter your API Key (must start with `kit_`)
+4. Click "Save Configuration"
+
+<Frame>
+  <img src="/images/newsletter-integration/kit/beehype-config.png" alt="BeeHype ConvertKit Configuration" />
+</Frame>
+
+## Verification & Next Steps
+
+After connecting:
+
+1. The status will show as "Connected"
+2. Go to [Create Content](https://www.beehype.io/app/create) to import your ConvertKit broadcasts
+3. Select the broadcasts you want to transform into social media content
+
+<Note>
+You can import your broadcasts at any time from the Create Content page. This gives you full control over which broadcasts you want to transform into social media content.
+</Note>
+
+## Content Access
+
+BeeHype will have access to:
+
+- Published broadcasts
+- Public newsletter content
+- Basic subscriber metrics (for analytics)
+
+We do not access:
+
+- Subscriber personal information
+- Payment details
+- Private or draft content
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. Verify your API key format (should start with `kit_`)
+2. Ensure your API key has not been revoked
+3. Check if your ConvertKit subscription is active
+4. Confirm you have the necessary permissions
+
+For additional help, contact [support@beehype.io](mailto:support@beehype.io)
