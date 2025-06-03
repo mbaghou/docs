@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "BeeHype Documentation",
   "theme": "mint",
+  "mode": "light",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -12,30 +13,12 @@
     "light": "#818CF8",
     "dark": "#3730A3"
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:support@beehype.io"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://app.beehype.io"
-  },
-  "anchors": [
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/beehype"
-    }
-  ],
   "navigation": {
     "groups": [
       {
         "group": "Getting Started",
         "pages": [
-          "getting-started/introduction",
-          "getting-started/quickstart"
+          "getting-started/introduction"
         ]
       },
       {
@@ -78,28 +61,22 @@
       }
     ]
   },
-  "footerSocials": {
-    "x": "https://twitter.com/beehype",
-    "linkedin": "https://linkedin.com/company/beehype"
-  },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@beehype.io"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to app",
+      "href": "https://www.beehype.io/app"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  },
+  "style": {
+    "custom": "/styles.css"
   }
 }

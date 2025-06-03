@@ -1,0 +1,11 @@
+/* Hide Mintlify footer */
+footer a[href*="mintlify.com"],
+footer a[href*="mintlify"] {
+  display: none !important;
+}
+
+/* Hide the separator before Mintlify link if it exists */
+footer a[href*="mintlify"]::before,
+footer a[href*="mintlify.com"]::before {
+  display: none !important;
+} 
