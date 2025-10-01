@@ -27,6 +27,7 @@
           "newsletter-integration/overview",
           "newsletter-integration/beehiiv",
           "newsletter-integration/substack",
+          "newsletter-integration/ghost",
           "newsletter-integration/kit"
         ]
       },
