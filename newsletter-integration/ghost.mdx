@@ -1,0 +1,163 @@
+---
+title: 'Ghost Integration'
+description: 'Connect your Ghost newsletter to BeeHype'
+---
+
+Connect your Ghost newsletter to automatically transform your content into engaging social media posts.
+
+## Prerequisites
+
+- A Ghost publication with admin access
+- Access to your Ghost admin dashboard
+- Your Ghost domain URL
+
+## Getting Your API Credentials
+
+### 1. Access Integrations Settings
+
+1. Log in to your Ghost admin dashboard
+2. Click on "Settings" in the left sidebar
+3. Navigate to "Integrations" in the settings menu
+4. Click on "Add custom integration"
+
+<Frame>
+  <img src="/images/newsletter-integration/ghost_integrations_settings.png" alt="Ghost Integrations Settings" />
+</Frame>
+
+### 2. Create Custom Integration
+
+1. Click "Add custom integration"
+2. Enter "BeeHype" as the integration name
+3. Optionally add a description: "BeeHype integration for social media content generation"
+4. Click "Create"
+
+<Frame>
+  <img src="/images/newsletter-integration/ghost_create_integration.png" alt="Ghost Create Custom Integration" />
+</Frame>
+
+### 3. Copy API Keys
+
+After creating the integration, you'll see two API keys:
+
+- **Content API Key**: Used to import your Ghost posts into BeeHype
+- **Admin API Key**: Optional, used for newsletter analytics and subscriber tracking
+
+<Frame>
+  <img src="/images/newsletter-integration/ghost_api_keys.png" alt="Ghost API Keys" />
+</Frame>
+
+<Warning>
+Store your API keys securely. The Admin API Key provides write access to your Ghost site, so keep it confidential.
+</Warning>
+
+### 4. Note Your Ghost URL
+
+You'll also need your Ghost site URL (e.g., `https://yourdomain.ghost.io` or your custom domain).
+
+## Connecting to BeeHype
+
+1. Go to [BeeHype Integrations](https://www.beehype.io/app/integrations)
+2. In the Ghost section, click "Connect"
+3. Enter your:
+   - **Ghost URL**: Your site's full URL
+   - **Content API Key**: For importing posts (required)
+   - **Admin API Key**: For analytics tracking (optional)
+4. Click "Save Configuration"
+
+<Frame>
+  <img src="/images/newsletter-integration/beehype_ghost_integration.png" alt="BeeHype Ghost Configuration" />
+</Frame>
+
+## API Key Usage
+
+### Content API Key (Required)
+- **Purpose**: Import published posts and pages from Ghost
+- **Access**: Read-only access to public content
+- **Safe for**: Browser environments and client-side applications
+
+### Admin API Key (Optional)
+- **Purpose**: Track newsletter performance and subscriber metrics
+- **Access**: Full read/write access to your Ghost site
+- **Features enabled**:
+  - Subscriber count tracking
+  - Email open rates
+  - Newsletter performance analytics
+  - Advanced content management
+
+<Note>
+The Admin API Key is optional but recommended if you want detailed analytics about your newsletter performance within BeeHype.
+</Note>
+
+## Verification & Next Steps
+
+After connecting:
+
+1. The status will show as "Connected"
+2. Go to [Create Content](https://www.beehype.io/app/create) to import your Ghost posts
+3. Select the posts you want to transform into social media content
+
+<Note>
+You can import your posts at any time from the Create Content page. This gives you full control over which posts you want to transform into social media content.
+</Note>
+
+## Data Security & Privacy
+
+Your API credentials are our top priority when it comes to security:
+
+- **Encrypted Storage**: All API keys are encrypted using industry-standard AES-256 encryption
+- **Limited Usage**: Keys are only accessed when performing specific actions like importing content or syncing data
+- **No Unnecessary Access**: We never use your keys for any purpose other than the features you've explicitly enabled
+- **Complete Deletion**: When you disconnect an integration, all associated API keys are immediately and permanently deleted from our servers
+- **Secure Transmission**: All API communications use HTTPS with TLS 1.3 encryption
+- **Regular Security Audits**: Our systems undergo regular security assessments to ensure your data remains protected
+
+<Info>
+BeeHype is committed to maintaining the highest security standards. Your trust is essential to us, and we've built our infrastructure with privacy and security as core principles.
+</Info>
+
+## Content Access
+
+BeeHype will have access to:
+
+**With Content API Key:**
+- Published posts and pages
+- Public content and metadata
+- Tags and authors information
+
+**With Admin API Key (optional):**
+- Newsletter subscriber metrics
+- Email campaign performance
+- Advanced content analytics
+- Member engagement data
+
+We do not access:
+- Private or draft content (unless Admin API is used)
+- Member personal information
+- Payment details
+- Site configuration settings
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. **Connection Failed**:
+   - Verify your Ghost URL is correct and accessible
+   - Ensure your Content API Key is valid
+   - Check if your Ghost site is publicly accessible
+
+2. **Import Issues**:
+   - Confirm you have published posts in Ghost
+   - Verify the Content API Key has proper permissions
+   - Check if your Ghost version supports the API version
+
+3. **Analytics Not Working**:
+   - Ensure you've provided the Admin API Key
+   - Verify the Admin API Key hasn't been revoked
+   - Check if your Ghost plan supports the required features
+
+4. **API Key Problems**:
+   - Regenerate the API keys from Ghost integrations
+   - Ensure you're copying the complete key without extra spaces
+   - Verify the integration is still active in Ghost
+
+For additional help, contact [support@beehype.io](mailto:support@beehype.io)
